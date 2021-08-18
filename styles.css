@@ -8,36 +8,99 @@ html, body, form, main {
 }
 
 body {
-    background-color: aquamarine;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container {  
-    height: 100%; 
-    background-color: salmon;
-    display: flex;
+.navbar {
+    width: 100%; 
+    height: 50px; 
+    background-color: black;
+    font-family: 'Sen', sans-serif;  
+}
+
+.navbar-container {
+    display: flex; 
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 0px  50px;
+    height: 100% ;
+    color: white;
 }
 
-.item {
-    width: 300px;
-    height: 300px;
-    background-color: steelblue;
-    position: relative;
+.logo-container {
+    flex: 1;
+} 
+
+.logo  {
+    font-size: 30px;
+    color: #4dbf00;
 }
 
-h1 {
-    bottom: 50px;
-    left: 50px;
-    position: absolute;
+.menu-container {
+    flex: 6;
 }
 
-.container-item {
-     width: 200px;
-     height: 200px; 
-     background-color: tan;
-     position: relative; 
+.menu-list {
+    display: flex;
+    list-style: none ;
 }
 
- 
+.menu-list-item {
+    margin-right: 30px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+
+.profile-container {
+    flex: 2;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container {
+    margin: 0  20px;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle {
+     width: 40px;
+     height: 20px;
+     background-color: white;
+     border-radius: 30px ;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;  
+}
+
+.toggle-ball {
+     width: 18px;
+     height: 18px; 
+     background-color: black;
+     position: absolute;
+     right: 1px;
+     border-radius: 50%; 
+     cursor: pointer; 
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    /* gets rid of scroll */
+    position: fixed;
+    top: 0;
+}
+
