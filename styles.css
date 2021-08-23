@@ -33,6 +33,7 @@ body {
 .logo  {
     font-size: 30px;
     color: #4dbf00;
+    padding-left: 70px;
 }
 
 .menu-container {
@@ -111,5 +112,5 @@ body {
 .left-menu-icon {
     color: white;
     font-size: 20px;
-    margin-bottom: 40 px;
+    margin-bottom: 40px;
 }
