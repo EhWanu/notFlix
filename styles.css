@@ -163,6 +163,7 @@ body {
 .movie-list-item {
     margin-right: 30px;
     transition: all 1s ease-in-out;
+    position: relative;
 }
 
 .movie-list-item:hover .movie-list-item-img{
@@ -175,4 +176,40 @@ body {
      height: 200px;
      object-fit: cover;
      transition: all .3s ease-in-out;
+}
+
+.movie-list-item-title {
+    background: #333;
+    padding: 0 10px;
+    font-size: 32;
+    font-weight: bold;
+    position: absolute;
+    top: 10;
+    left: 50px;
+    opacity: 0;
+}
+
+.movie-list-item-desc {
+    background: #333;
+    padding: 10px;
+    font-size: 14;
+    position: absolute;
+    top: 10;
+    left: 50px;
+    opacity: 0;
+    width: 230px;
+}
+
+.movie-list-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer; 
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
 }
