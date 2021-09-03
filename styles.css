@@ -124,3 +124,7 @@ body {
 .content-container {
     margin-left: 125px;
 }
+
+.featured-content {
+    height: 50vh;
+}
