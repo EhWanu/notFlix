@@ -141,7 +141,7 @@ body {
 }
 
 .featured-btn {
-     background-color: #4dbf00;    
+     background-color: #4dbf00;     
      color: white;
      padding: 10px 20px;
      border-radius: 10px;
@@ -151,7 +151,8 @@ body {
 }
 
 .movie-list-container {
-    padding: 20px;
+    padding: 0px 20px;
+    cursor: pointer;
 }
 .movie-list-wrapper {  
     position: relative;
@@ -181,7 +182,7 @@ body {
 .movie-list-item:hover .movie-list-item-desc,
 .movie-list-item:hover .movie-list-item-button{
     opacity:  1;
-}
+} 
 
 .movie-list-item-img {
      width: 290px;
