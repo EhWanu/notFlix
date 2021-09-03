@@ -169,6 +169,14 @@ body {
 .movie-list-item:hover .movie-list-item-img{
      transform: scale(1.2);
      margin: 0 30px;
+     opacity: 0.5;
+     transition: all .5s ease-in-out
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity:  1;
 }
 
 .movie-list-item-img {
@@ -181,12 +189,13 @@ body {
 .movie-list-item-title {
     background: #333;
     padding: 0 10px;
-    font-size: 32;
+    font-size: 32px;
     font-weight: bold;
     position: absolute;
-    top: 10;
+    top: 10%;
     left: 50px;
     opacity: 0;
+    transition: all .9s ease-in-out;
 }
 
 .movie-list-item-desc {
@@ -194,10 +203,12 @@ body {
     padding: 10px;
     font-size: 14;
     position: absolute;
-    top: 10;
+    top: 30%;
     left: 50px;
     opacity: 0;
     width: 230px;
+    transition: all .9s ease-in-out;
+
 }
 
 .movie-list-item-button {
@@ -212,4 +223,6 @@ body {
     bottom: 20px;
     left: 50px;
     opacity: 0;
+    transition: all .5s ease-in-out;
+
 }
