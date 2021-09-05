@@ -1,6 +1,9 @@
 const arrows = document.querySelectorAll(".arrow");
 const movieLists = document.querySelectorAll(".movie-list");
 
-
-console.log(arrows)
-console.log(movieLists) 
+arrows.forEach((arrow, i) => {
+    arrow.addEventListener('click', () => {
+        (movieLists[i].style.transform = 'translateX(-100px)')
+    })
+})
+ 
