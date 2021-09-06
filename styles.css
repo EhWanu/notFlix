@@ -164,6 +164,8 @@ body {
     display: flex; 
     align-items: center;
     height: 300px;
+    transform: translateX(0);
+    transition: all .8s ease-in-out; 
 }
 
 .movie-list-item {
