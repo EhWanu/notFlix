@@ -165,7 +165,7 @@ body {
     align-items: center;
     height: 300px;
     transform: translateX(0);
-    transition: all .8s ease-in-out; 
+    transition: all .5s ease-in-out; 
 }
 
 .movie-list-item {
@@ -178,7 +178,7 @@ body {
      transform: scale(1.2);
      margin: 0 30px;
      opacity: 0.5;
-     transition: all .5s ease-in-out
+     transition: all .3s ease-in-out
 }
 
 .movie-list-item:hover .movie-list-item-title,
@@ -192,6 +192,7 @@ body {
      height: 200px;
      object-fit: cover;
      transition: all .3s ease-in-out;
+     border-radius: 20px;
 }
 
 .movie-list-item-title {
