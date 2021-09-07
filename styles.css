@@ -94,6 +94,7 @@ body {
      right: 1px;
      border-radius: 50%; 
      cursor: pointer; 
+     transition: .2s ease-in-out;
 }
 
 .sidebar {
@@ -107,10 +108,177 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    transition: .2s ease-in-out;
+
 }
 
 .left-menu-icon {
     color: white;
     font-size: 20px;
     margin-bottom: 40px;
+    transition: .2s ease-in-out;
+
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container {
+    margin-left: 125px;
+}
+
+.featured-content {
+    height: 50vh;
+    padding: 50px; 
+}
+
+.featured-title {
+    width: 200px;
+}
+
+.featured-desc {
+    width: 500px; 
+    color: lightgrey;
+    margin: 30px 0px  ;
+}
+
+.featured-btn {
+     background-color: #4dbf00;     
+     color: white;
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     font-weight: bold;
+}
+
+.movie-list-container {
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.movie-list-wrapper {  
+    position: relative;
+    overflow: hidden;
+}
+
+
+.movie-list {
+    display: flex; 
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all .5s ease-in-out; 
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+     transform: scale(1.2);
+     margin: 0 30px;
+     opacity: 0.5;
+     transition: all .3s ease-in-out
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity:  1;
+} 
+
+.movie-list-item-img {
+     width: 290px;
+     height: 200px;
+     object-fit: cover;
+     transition: all .3s ease-in-out;
+     border-radius: 20px;
+}
+
+.movie-list-item-title {
+    background: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all .9s ease-in-out;
+}
+
+.movie-list-item-desc {
+    background: #333;
+    padding: 10px;
+    font-size: 14;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    opacity: 0;
+    width: 230px;
+    transition: all .9s ease-in-out;
+
+}
+
+.movie-list-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer; 
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.arrow {
+     font-size: 120px;
+     position: absolute;
+     top: 90px;
+     right: 0; 
+     color: lightgrey;
+     opacity: 0.5;
+     cursor: pointer;
+}
+
+.container.active {
+    background-color: white;
+}
+
+.movie-list-title.active {
+    color: black;
+    transition: .2s ease-in-out;
+}
+ 
+.navbar-container.active {
+    background-color: white;
+    color: black;
+    transition: .2s ease-in-out;
+
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.left-menu-icon.active {
+     color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px)
 }
