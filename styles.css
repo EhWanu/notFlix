@@ -94,6 +94,7 @@ body {
      right: 1px;
      border-radius: 50%; 
      cursor: pointer; 
+     transition: .2s ease-in-out;
 }
 
 .sidebar {
@@ -107,12 +108,16 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    transition: .2s ease-in-out;
+
 }
 
 .left-menu-icon {
     color: white;
     font-size: 20px;
     margin-bottom: 40px;
+    transition: .2s ease-in-out;
+
 }
 
 .container {
@@ -243,4 +248,37 @@ body {
      color: lightgrey;
      opacity: 0.5;
      cursor: pointer;
+}
+
+.container.active {
+    background-color: white;
+}
+
+.movie-list-title.active {
+    color: black;
+    transition: .2s ease-in-out;
+}
+ 
+.navbar-container.active {
+    background-color: white;
+    color: black;
+    transition: .2s ease-in-out;
+
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.left-menu-icon.active {
+     color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px)
 }
